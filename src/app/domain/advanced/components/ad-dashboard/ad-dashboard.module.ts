@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AdDashboardRoutingModule } from './ad-dashboard-routing.module';
 import { AdDashboardComponent } from './ad-dashboard.component';
+import {SimpleStatComponent} from "../../../shared/simple-stat/simple-stat.component";
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AdDashboardComponent } from './ad-dashboard.component';
   ],
   imports: [
     CommonModule,
-    AdDashboardRoutingModule
+    AdDashboardRoutingModule,
+    SimpleStatComponent,
   ]
 })
 export class AdDashboardModule { }

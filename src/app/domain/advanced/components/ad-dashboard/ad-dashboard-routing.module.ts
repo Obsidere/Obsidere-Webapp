@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {AdDashboardComponent} from "./ad-dashboard.component";
 
 const routes: Routes = [
-  {path: '', component: AdDashboardComponent, pathMatch: 'full'}
+  {path: '', component: AdDashboardComponent}
 ];
 
 @NgModule({
