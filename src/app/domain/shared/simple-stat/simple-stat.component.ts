@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+export interface SimpleStatRow {
+  text: string,
+  value: number | string
+}
 
 @Component({
   selector: 'app-simple-stat',
@@ -9,5 +14,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./simple-stat.component.scss']
 })
 export class SimpleStatComponent {
-
+  @Input() header?: string;
+  @Input() rows?: SimpleStatRow[];
 }
